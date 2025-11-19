@@ -5,6 +5,10 @@ body{display:flex;align-items:center;justify-content:center;background:linear-gr
 .card{background:var(--card);padding:32px;border-radius:12px;box-shadow:0 6px 24px rgba(7,15,30,0.08);max-width:720px;text-align:center}
 h1{margin:0 0 8px;font-size:28px;color:#0f172a}
 p{margin:0 0 16px;color:var(--muted)}
-a.button{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+a.button{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+a.button svg{width:18px;height:18px;display:block;flex:0 0 18px}
+
+/* lighter button variant for secondary actions (if needed) */
+.button.secondary{background:#0ea5a4}
 footer{margin-top:18px;color:var(--muted);font-size:13px}
 img.logo{max-width:160px;display:block;margin:0 auto 16px;border-radius:8px}
