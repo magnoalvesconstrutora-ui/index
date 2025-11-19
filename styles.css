@@ -21,4 +21,6 @@ img.logo{max-width:160px;display:block;margin:0 auto 16px;border-radius:8px}
     flex-direction: row;
     justify-content: space-between;
     align-items: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
 }
