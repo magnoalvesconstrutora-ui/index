@@ -1,24 +1,115 @@
-/* Extracted styles from index.html */
-:root { --bg:#f7f9fc; --card:#fff; --muted:#6b7280; --accent:#0369a1; }
-html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg),#eef2f7)}
-.card{background:var(--card);padding:32px;border-radius:12px;box-shadow:0 6px 24px rgba(7,15,30,0.08);max-width:720px;text-align:center}
-a.button{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
-a.button svg{width:18px;height:18px;display:block;flex:0 0 18px}
-
-/* lighter button variant for secondary actions (if needed) */
-.button.secondary{background:#0ea5a4}
-footer{margin-top:18px;color:var(--muted);font-size:13px}
-img.logo{max-width:160px;display:block;margin:0 auto 16px;border-radius:8px}
-.portolio {
-    width: fit-content;
-    max-width: fit-content;
+:root {
+  --bg:#f7f9fc;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#0369a1;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--bg), #eef2f7);
+  padding: 16px;
+}
+
+/* CARD PRINCIPAL */
+.card {
+  background: var(--card);
+  width: 100%;
+  max-width: 720px;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(7, 15, 30, 0.08);
+  text-align: center;
+}
+
+/* BOTÕES */
+a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+a.button:hover {
+  opacity: 0.9;
+}
+
+a.button i {
+  font-size: 18px;
+}
+
+/* BOTÃO VARIANTE */
+.button.secondary {
+  background: #0ea5a4;
+}
+
+/* IMAGENS */
+img.logo {
+  max-width: 160px;
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 8px;
+}
+
+.portfolio {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER DE ÍCONES */
 .coll {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------------------- */
+/*        MOBILE          */
+/* ---------------------- */
+@media (max-width: 480px) {
+
+  .card {
+    padding: 20px;
+  }
+
+  a.button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .coll {
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+  }
+
+  img.logo {
+    max-width: 120px;
+  }
+
 }
