@@ -16,3 +16,9 @@ img.logo{max-width:160px;display:block;margin:0 auto 16px;border-radius:8px}
     width: fit-content;
     max-width: fit-content;
 }
+.coll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+}
