@@ -12,3 +12,6 @@ a.button svg{width:18px;height:18px;display:block;flex:0 0 18px}
 .button.secondary{background:#0ea5a4}
 footer{margin-top:18px;color:var(--muted);font-size:13px}
 img.logo{max-width:160px;display:block;margin:0 auto 16px;border-radius:8px}
+.portolio {
+    width: 100vh;
+}
